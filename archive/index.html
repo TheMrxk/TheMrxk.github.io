@@ -26,6 +26,8 @@
 <meta name="twitter:title" content="archive">
     
     
+      <link rel="alternate" href="/atom.xml" title="TheMrxk" type="application/atom+xml">
+    
     
       <link rel="icon" type="image/x-icon" href="/favicon.png">
     
@@ -33,12 +35,6 @@
     <link rel="stylesheet" href="/css/highlight.css">
     <link rel="stylesheet" href="/css/archive.css">
     <link rel="stylesheet" href="/css/china-social-icon.css">
-
-<!-- 动态背景代码 -->
-{% if theme.canvas_nest %}
-<script type="text/javascript" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
-{% endif %}
-
 
 </head>
 <body>
@@ -58,7 +54,8 @@
   
     <div class="panel-main__inner panel-inverted">
     <div class="panel-main__content">
-
+        
+        <a href="/" title="link to homepage for TheMrxk"><img src="/avatar.png" width="80" alt="TheMrxk logo" class="panel-cover__logo logo"></a>
         
 
         <h1 class="panel-cover__title panel-title"><a href="/" title="link to homepage">TheMrxk</a></h1>
@@ -79,7 +76,10 @@
                 <li class="navigation__item"><a href="/about" title="" class="">关于</a></li>
               
                 
-                <li class="navigation__item"><a href="/archive" title="" class="">归档</a></li>
+                <li class="navigation__item"><a href="/archive" title="" class="">总览</a></li>
+              
+                
+                <li class="navigation__item"><a href="/resources" title="" class="">资源</a></li>
               
 
             </ul>
@@ -167,12 +167,7 @@ classes that you can use:
 
     -->
 
-<li class="navigation__item">
-  <a href="https://www.weibo.com/274444830" title="">
-    <i class="icon cs-icon-weibo"></i>
-    <span class="label">Weibo</span>
-  </a>
-</li>
+
 
   </ul>
 </nav>
@@ -200,27 +195,188 @@ classes that you can use:
     <h1 class="post-title">archive</h1>
 
     
-
   </header>
+
 
   <section id="post-content" class="article-content post">
     
   </section>
 
-  <section class="post-comments">
+ 
+  <div class="passage-end-tag">
+        <div style="text-align:center;color: #0A4664;font-size:18px;">-------------本文已结束，<i class="fa fa-paw"></i>感谢您的阅读！！！-------------</div>
+</div>
 
-    <!-- 将评论系统（例如Disqus、多说、友言、畅言等）提供的代码片段粘贴在这里 -->
+
+  
+<section class="post-donate">
+
+  <!-- css -->
+  <style type="text/css">
+    .center {
+      text-align: center;
+    }
+    .hidden {
+      display: none;
+    }
+    .donate_bar a.btn_donate{
+      display: inline-block;
+      width: 82px;
+      height: 82px;
+      background: url("/images/btn_reward.gif") no-repeat;
+      _background: url("/images/btn_reward.gif") no-repeat;
+      <!-- http://img.t.sinajs.cn/t5/style/images/apps_PRF/e_media/btn_reward.gif
+           因为本 hexo 生成的博客所用的 theme 的 a:hover 带动画效果，
+         为了在让打赏按钮显示效果正常 而 添加了以下几行 css，
+         嵌入其它博客时不一定要它们。 -->
+      -webkit-transition: background 0s;
+      -moz-transition: background 0s;
+      -o-transition: background 0s;
+      -ms-transition: background 0s;
+      transition: background 0s;
+      <!-- /让打赏按钮的效果显示正常 而 添加的几行 css 到此结束 -->
+    }
+    .donate_bar a.btn_donate:hover{ background-position: 0px -82px;}
+    .donate_bar .donate_txt {
+      display: block;
+      color: #9d9d9d;
+      font: 14px/2 "Microsoft Yahei";
+    }
+    .bold{ font-weight: bold; }
+  </style>
+  <!-- /css -->
+  <!-- Donate Module -->
+  <div id="donate_module">
+  <!-- btn_donate & tips -->
+    <div id="donate_board" class="donate_bar center">
+      
+      <a id="btn_donate" class="btn_donate" target="_self" href="javascript:;" title="Donate 打赏"></a>
+      <span class="donate_txt">
+        更新文章不容易，打赏是最大鼓励！
+      </span> 
+    </div>
+    <!-- /btn_donate & tips -->
+    <!-- donate guide -->
     
+    <div id="donate_guide" class="donate_bar center hidden">
+      <a href="/images/wechat.jpg" title="用微信扫一扫" class="fancybox" rel="article0">
+        <img src="/images/wechat.jpg" title="微信打赏" height="190px" width="auto">
+      </a>
+        
+      &nbsp;&nbsp;
+      <a href="/images/alipay.jpg" title="用支付宝扫一扫" class="fancybox" rel="article0">
+        <img src="/images/alipay.jpg" title="支付宝打赏" height="190px" width="auto">
+      </a>
+      <span class="donate_txt">
+        更新文章不容易，打赏是最大鼓励！
+      </span>
+    </div>
+    <!-- /donate guide -->
+    <!-- donate script -->
+    <script type="text/javascript">
+      document.getElementById('btn_donate').onclick = function() {
+        $('#donate_board').addClass('hidden');
+        $('#donate_guide').removeClass('hidden');
+      }
+      function donate_on_web(){
+        $('#donate').submit();
+      }
+      var original_window_onload = window.onload;
+      window.onload = function () {
+        if (original_window_onload) {
+          original_window_onload();
+        }
+        document.getElementById('donate_board_wdg').className = 'hidden';
+      }
+    </script>
+    <!-- /donate script -->
+  </div>
+  <!-- /Donate Module -->
+
 </section>
 
 
+  
+  <script src="/js/jquery.min.js"></script>
+<script type="text/javascript"> 
+if( theme.Valine.visitor == true){
+    var leancloud_app_id  = 'nF5htxCS74ys844MNr3knPO6-gzGzoHsz';
+    var leancloud_app_key = 'nXNCsDAsQsufkRWDHendivPi';
+
+    AV.init({
+        appId: leancloud_app_id,
+        appKey: leancloud_app_key
+    });
+
+    var pageViewsLength = $(".pageViews").length;
+
+    var isIndex = $(".pageViews").length > 1 ?true:false;
+
+    function showTime() {
+        var Counter = AV.Object.extend("Counter");
+        if(isIndex){
+            $(".pageViews").each(function(){
+                showPageViewsNum($(this),Counter);
+                addPageViewsNum($(this));
+            });
+        }else{
+            showPageViewsNum($(".pageViews"),Counter);
+            addPageViewsNum($(".pageViews"));
+        }
+    }
+
+    //显示阅读量
+    function showPageViewsNum(ele,Counter){
+        var query = new AV.Query("Counter");
+        var url = ele.attr('id').trim();
+            query.equalTo("words", url);
+            query.count().then(function (number) {
+                $(document.getElementById(url)).text(number?  number : '0');
+            }, function (error) {
+                 $(document.getElementById(url)).text('0');
+            });
+    }
+
+    //追加阅读量
+    function addPageViewsNum(ele){
+        var url = ele.attr('id').trim();
+        var Counter = AV.Object.extend("Counter");
+        var query = new Counter;
+        query.save({
+            words: url
+        }).then(function (object) {});
+    }
+
+    if(pageViewsLength){ //此处判断等于 1 在执行 可去除循环
+        showTime();
+    }
+}
+</script> 
+  
+
+
+  
+  <section class="post-comments">
+    <div id="vcomments"></div>   
+    <script src="/js/av-min.js"></script>    
+    <script src="/js/Valine.min.js"></script>    
+    <script>        
+        new Valine({
+            el: '#vcomments',
+            appId: 'nF5htxCS74ys844MNr3knPO6-gzGzoHsz',
+            appKey: 'nXNCsDAsQsufkRWDHendivPi',	    
+            placeholder: 'ヾﾉ≧∀≦)o来啊，快活啊!', 
+            visitor: 'true'  
+        })
+    </script>
+</section>
+  
+
+
 </article>
-
-
             <footer class="footer">
 
-    <span class="footer__copyright">&copy; 2014-2015. | 由<a href="https://hexo.io/">Hexo</a>强力驱动 | 主题<a href="https://github.com/someus/huno">Huno</a></span>
-    
+    <span class="footer__copyright">&copy; 2018. | 澎湖冰洲 | 主题<a href="https://github.com/someus/huno">Huno</a></span>
 </footer>
         </div>
     </div>
@@ -246,12 +402,19 @@ classes that you can use:
     
     
     
+
+    <script src="/js/jquery.githubRepoWidget.min.js"></script>
+
+
     <!--kill ie6 -->
 <!--[if IE 6]>
   <script src="//letskillie6.googlecode.com/svn/trunk/2/zh_CN.js"></script>
 <![endif]-->
 
-
+    <!-- 背景的nest动画相关片段 -->
+    
+    <script type="text/javascript" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
+    
 
 </body>
 </html>

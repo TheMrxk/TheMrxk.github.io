@@ -25,6 +25,8 @@
 <meta name="twitter:title" content="Archives">
     
     
+      <link rel="alternate" href="/atom.xml" title="TheMrxk" type="application/atom+xml">
+    
     
       <link rel="icon" type="image/x-icon" href="/favicon.png">
     
@@ -32,12 +34,6 @@
     <link rel="stylesheet" href="/css/highlight.css">
     <link rel="stylesheet" href="/css/archive.css">
     <link rel="stylesheet" href="/css/china-social-icon.css">
-
-<!-- 动态背景代码 -->
-{% if theme.canvas_nest %}
-<script type="text/javascript" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
-{% endif %}
-
 
 </head>
 <body>
@@ -57,7 +53,8 @@
   
     <div class="panel-main__inner panel-inverted">
     <div class="panel-main__content">
-
+        
+        <a href="/" title="link to homepage for TheMrxk"><img src="/avatar.png" width="80" alt="TheMrxk logo" class="panel-cover__logo logo"></a>
         
 
         <h1 class="panel-cover__title panel-title"><a href="/" title="link to homepage">TheMrxk</a></h1>
@@ -78,7 +75,10 @@
                 <li class="navigation__item"><a href="/about" title="" class="">关于</a></li>
               
                 
-                <li class="navigation__item"><a href="/archive" title="" class="">归档</a></li>
+                <li class="navigation__item"><a href="/archive" title="" class="">总览</a></li>
+              
+                
+                <li class="navigation__item"><a href="/resources" title="" class="">资源</a></li>
               
 
             </ul>
@@ -166,12 +166,7 @@ classes that you can use:
 
     -->
 
-<li class="navigation__item">
-  <a href="https://www.weibo.com/274444830" title="">
-    <i class="icon cs-icon-weibo"></i>
-    <span class="label">Weibo</span>
-  </a>
-</li>
+
 
   </ul>
 </nav>
@@ -201,7 +196,7 @@ classes that you can use:
     
     
     <li>
-
+    
       <h2 class="post-list__post-title post-title">
         <a href="/2017/10/28/hello-world/" title="link to Hello World">Hello World</a>
       </h2>
@@ -210,6 +205,11 @@ classes that you can use:
 
         <time datetime="2017-10-28" class="post-list__meta--date date">2017-10-28</time> 
       </div>
+ 
+      <span class="post-meta__tags tags">
+  
+  
+    </span>
 
       <div class="excerpt">
         
@@ -219,7 +219,6 @@ classes that you can use:
     </li>
     
   </ol>
-
   <hr class="post-list__divider ">
 
 <nav class="pagination" role="navigation">
@@ -231,11 +230,14 @@ classes that you can use:
 </nav>
 
 
+
+
+ 
+
 </div>
             <footer class="footer">
 
-    <span class="footer__copyright">&copy; 2014-2015. | 由<a href="https://hexo.io/">Hexo</a>强力驱动 | 主题<a href="https://github.com/someus/huno">Huno</a></span>
-    
+    <span class="footer__copyright">&copy; 2018. | 澎湖冰洲 | 主题<a href="https://github.com/someus/huno">Huno</a></span>
 </footer>
         </div>
     </div>
@@ -261,12 +263,19 @@ classes that you can use:
     
     
     
+
+    <script src="/js/jquery.githubRepoWidget.min.js"></script>
+
+
     <!--kill ie6 -->
 <!--[if IE 6]>
   <script src="//letskillie6.googlecode.com/svn/trunk/2/zh_CN.js"></script>
 <![endif]-->
 
-
+    <!-- 背景的nest动画相关片段 -->
+    
+    <script type="text/javascript" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
+    
 
 </body>
 </html>
