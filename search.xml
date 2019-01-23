@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[Test Title]]></title>
+    <url>%2F2019%2F01%2F23%2Ftest-title%2F</url>
+    <content type="text"><![CDATA[Welcome to TheMrxk Blog1$ This Is My First Blog! Test a sentence1$ Hellow Word~ Thank you everyonePs:如果你手速足够快的快，估计你是第一个看我博客的人，17点之前私聊我微信，过来领2块钱红包！🧧 More info：By TheMrxk 小开哥]]></content>
+      <categories>
+        <category>web前端</category>
+      </categories>
+      <tags>
+        <tag>jQuery</tag>
+        <tag>表格</tag>
+        <tag>表单验证</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Hello World]]></title>
+    <url>%2F2017%2F10%2F28%2Fhello-world%2F</url>
+    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
+  </entry>
+</search>
