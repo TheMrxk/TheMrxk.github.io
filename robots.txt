@@ -12,5 +12,5 @@ Disallow: /fonts/
 Disallow: /vendors/
 Disallow: /fancybox/
 
-Sitemap: http://www.blog.govane.top/sitemap.xml
-Sitemap: http://www.blog.govane.top/baidusitemap.xml
+Sitemap: https://www.blog.govane.top/sitemap.xml
+Sitemap: https://www.blog.govane.top/baidusitemap.xml
