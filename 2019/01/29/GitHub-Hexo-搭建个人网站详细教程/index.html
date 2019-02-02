@@ -102,7 +102,11 @@
 <meta property="og:image" content="http://www.blog.govane.top/2019/01/29/GitHub-Hexo-搭建个人网站详细教程/解析地址.png">
 <meta property="og:image" content="http://www.blog.govane.top/2019/01/29/GitHub-Hexo-搭建个人网站详细教程/cname.png">
 <meta property="og:image" content="http://www.blog.govane.top/2019/01/29/GitHub-Hexo-搭建个人网站详细教程/WX20190129-132315.png">
-<meta property="og:updated_time" content="2019-01-29T08:12:54.698Z">
+<meta property="og:image" content="http://www.blog.govane.top/2019/01/29/GitHub-Hexo-搭建个人网站详细教程/网易云.png">
+<meta property="og:image" content="http://www.blog.govane.top/2019/01/29/GitHub-Hexo-搭建个人网站详细教程/外部代码.png">
+<meta property="og:image" content="http://www.blog.govane.top/2019/01/29/GitHub-Hexo-搭建个人网站详细教程/WX20190202-085602.png">
+<meta property="og:image" content="http://www.blog.govane.top/2019/01/29/GitHub-Hexo-搭建个人网站详细教程/WechatIMG6142.png">
+<meta property="og:updated_time" content="2019-02-02T01:01:35.809Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="GitHub-Hexo-搭建个人网站详细教程">
 <meta name="twitter:description" content="什么是Hexo ? Hexo是一款基于Node.js的静态博客框架，依赖少易于安装使用，可以方便的生成静态网页托管在GitHub和Heroku上，是搭建博客的首选框架。这里我们选用的是GitHub，你没看错，全球最大的同性恋交友网站（逃……）。Hexo同时也是GitHub上的开源项目，参见：hexojs/hexo 如果想要更加全面的了解Hexo，可以到其官网 Hexo 了解更多的细节，因为Hex">
@@ -416,7 +420,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  2.9k
+                  3k
                 </span>
               
 
@@ -432,7 +436,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  10
+                  11
                 </span>
               
             </div>
@@ -469,6 +473,7 @@
 <li>更换主题</li>
 <li>发布文章</li>
 <li>个性化设置</li>
+<li>添加播放器</li>
 </ul>
 <p><strong>获得个人网站域名</strong></p>
 <p>域名是网站的入口，也是网站的第一印象，比如饿了么的官网的域名是：<a href="http://link.zhihu.com/?target=https%3A//www.ele.me/" target="_blank" rel="noopener">https://www.ele.me/</a> ，很是巧妙。常见的有com,cn,net,org等后缀，也有小众的xyz,me,io等后缀，根据你自己的喜好，选择不同的后缀，比如我选择就是常见的com后缀。很多小众奇特的后缀在大陆是没办法备案的，网站也就无法上线。然而使用GitHub托管我们的网站，完全不需要备案，因为托管我们的网站内容的服务器在美国，而且在国内备案流程也比较繁杂，时间需要一周左右。</p>
@@ -568,6 +573,14 @@
 <h3 id="十一-个性化设置"><a href="#十一-个性化设置" class="headerlink" title="十一.个性化设置"></a>十一.个性化设置</h3><p>参考文献：</p>
 <p><a href="https://liolok.github.io/Hexo-and-NexT/" target="_blank" rel="noopener">梯子客户端收录</a></p>
 <p><a href="https://segmentfault.com/a/1190000009544924" target="_blank" rel="noopener">hexo的next主题个性化配置教程</a></p>
+<h3 id="十二-添加播放器"><a href="#十二-添加播放器" class="headerlink" title="十二.添加播放器"></a>十二.添加播放器</h3><p>打开网页版的网易云音乐，选择喜欢的音乐，点击生成外链播放器</p>
+<p><img src="/2019/01/29/GitHub-Hexo-搭建个人网站详细教程/网易云.png" alt="网易云"></p>
+<p>复制外链的代码</p>
+<p><img src="/2019/01/29/GitHub-Hexo-搭建个人网站详细教程/外部代码.png" alt="外部代码"></p>
+<p>在侧栏插入这首歌的音乐播放器，修改 blog\themes\next\layout_macro的sidebar.swig文件，添加刚刚复制的外链代码</p>
+<p><img src="/2019/01/29/GitHub-Hexo-搭建个人网站详细教程/WX20190202-085602.png" alt="WX20190202-085602"></p>
+<p>重新生成、部署网页，效果如下</p>
+<p><img src="/2019/01/29/GitHub-Hexo-搭建个人网站详细教程/WechatIMG6142.png" alt="WechatIMG6142"></p>
 
       
     </div>
@@ -851,7 +864,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#什么是Hexo"><span class="nav-number">1.</span> <span class="nav-text">什么是Hexo ?</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#搭建步骤："><span class="nav-number">2.</span> <span class="nav-text">搭建步骤：</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#一-GitHub创建个人仓库"><span class="nav-number">2.1.</span> <span class="nav-text">一.GitHub创建个人仓库</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#二-安装Git"><span class="nav-number">2.2.</span> <span class="nav-text">二.安装Git</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#三-创建ssh-key，配置git"><span class="nav-number">2.3.</span> <span class="nav-text">三.创建ssh key，配置git</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#四-安装Node-js"><span class="nav-number">2.4.</span> <span class="nav-text">四.安装Node.js</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#五-安装Hexo"><span class="nav-number">2.5.</span> <span class="nav-text">五.安装Hexo</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#六-常用的Hexo-命令"><span class="nav-number">2.6.</span> <span class="nav-text">六.常用的Hexo 命令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#七-推送站点"><span class="nav-number">2.7.</span> <span class="nav-text">七.推送站点</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#八-绑定域名"><span class="nav-number">2.8.</span> <span class="nav-text">八.绑定域名</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#十-发布文章"><span class="nav-number">2.9.</span> <span class="nav-text">十.发布文章</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#十一-个性化设置"><span class="nav-number">2.10.</span> <span class="nav-text">十一.个性化设置</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#什么是Hexo"><span class="nav-number">1.</span> <span class="nav-text">什么是Hexo ?</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#搭建步骤："><span class="nav-number">2.</span> <span class="nav-text">搭建步骤：</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#一-GitHub创建个人仓库"><span class="nav-number">2.1.</span> <span class="nav-text">一.GitHub创建个人仓库</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#二-安装Git"><span class="nav-number">2.2.</span> <span class="nav-text">二.安装Git</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#三-创建ssh-key，配置git"><span class="nav-number">2.3.</span> <span class="nav-text">三.创建ssh key，配置git</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#四-安装Node-js"><span class="nav-number">2.4.</span> <span class="nav-text">四.安装Node.js</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#五-安装Hexo"><span class="nav-number">2.5.</span> <span class="nav-text">五.安装Hexo</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#六-常用的Hexo-命令"><span class="nav-number">2.6.</span> <span class="nav-text">六.常用的Hexo 命令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#七-推送站点"><span class="nav-number">2.7.</span> <span class="nav-text">七.推送站点</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#八-绑定域名"><span class="nav-number">2.8.</span> <span class="nav-text">八.绑定域名</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#十-发布文章"><span class="nav-number">2.9.</span> <span class="nav-text">十.发布文章</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#十一-个性化设置"><span class="nav-number">2.10.</span> <span class="nav-text">十一.个性化设置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#十二-添加播放器"><span class="nav-number">2.11.</span> <span class="nav-text">十二.添加播放器</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -917,7 +930,7 @@
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共3k字</span>
+  <span class="post-count">博客全站共3.1k字</span>
 </div>
         
 
