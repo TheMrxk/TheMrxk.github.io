@@ -5,9 +5,9 @@
   <subtitle>致力于分享自己计算机经验</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/"/>
+  <link href="https://blog.govane.top/"/>
   <updated>2019-02-03T04:59:15.215Z</updated>
-  <id>http://yoursite.com/</id>
+  <id>https://blog.govane.top/</id>
   
   <author>
     <name>TheMrxk个人博客</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>小米Pro15.6 安装黑苹果兼MacOS Mojave安装教程</title>
-    <link href="http://yoursite.com/2019/02/03/%E5%B0%8F%E7%B1%B3PRO%E5%AE%89%E8%A3%85%E9%BB%91%E8%8B%B9%E6%9E%9C/"/>
-    <id>http://yoursite.com/2019/02/03/小米PRO安装黑苹果/</id>
+    <link href="https://blog.govane.top/2019/02/03/%E5%B0%8F%E7%B1%B3PRO%E5%AE%89%E8%A3%85%E9%BB%91%E8%8B%B9%E6%9E%9C/"/>
+    <id>https://blog.govane.top/2019/02/03/小米PRO安装黑苹果/</id>
     <published>2019-02-03T02:50:09.000Z</published>
     <updated>2019-02-03T04:59:15.215Z</updated>
     
@@ -34,23 +34,23 @@
     
     </summary>
     
-      <category term="黑苹果" scheme="http://yoursite.com/categories/%E9%BB%91%E8%8B%B9%E6%9E%9C/"/>
+      <category term="黑苹果" scheme="https://blog.govane.top/categories/%E9%BB%91%E8%8B%B9%E6%9E%9C/"/>
     
-      <category term="教程" scheme="http://yoursite.com/categories/%E9%BB%91%E8%8B%B9%E6%9E%9C/%E6%95%99%E7%A8%8B/"/>
+      <category term="教程" scheme="https://blog.govane.top/categories/%E9%BB%91%E8%8B%B9%E6%9E%9C/%E6%95%99%E7%A8%8B/"/>
     
     
-      <category term="黑苹果" scheme="http://yoursite.com/tags/%E9%BB%91%E8%8B%B9%E6%9E%9C/"/>
+      <category term="黑苹果" scheme="https://blog.govane.top/tags/%E9%BB%91%E8%8B%B9%E6%9E%9C/"/>
     
-      <category term="小米" scheme="http://yoursite.com/tags/%E5%B0%8F%E7%B1%B3/"/>
+      <category term="小米" scheme="https://blog.govane.top/tags/%E5%B0%8F%E7%B1%B3/"/>
     
-      <category term="教程" scheme="http://yoursite.com/tags/%E6%95%99%E7%A8%8B/"/>
+      <category term="教程" scheme="https://blog.govane.top/tags/%E6%95%99%E7%A8%8B/"/>
     
   </entry>
   
   <entry>
     <title>GitHub-Hexo-搭建个人网站详细教程</title>
-    <link href="http://yoursite.com/2019/01/29/GitHub-Hexo-%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99%E8%AF%A6%E7%BB%86%E6%95%99%E7%A8%8B/"/>
-    <id>http://yoursite.com/2019/01/29/GitHub-Hexo-搭建个人网站详细教程/</id>
+    <link href="https://blog.govane.top/2019/01/29/GitHub-Hexo-%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99%E8%AF%A6%E7%BB%86%E6%95%99%E7%A8%8B/"/>
+    <id>https://blog.govane.top/2019/01/29/GitHub-Hexo-搭建个人网站详细教程/</id>
     <published>2019-01-29T04:52:17.000Z</published>
     <updated>2019-02-02T01:15:06.808Z</updated>
     
@@ -65,21 +65,21 @@
     
     </summary>
     
-      <category term="web前端" scheme="http://yoursite.com/categories/web%E5%89%8D%E7%AB%AF/"/>
+      <category term="web前端" scheme="https://blog.govane.top/categories/web%E5%89%8D%E7%AB%AF/"/>
     
-      <category term="个人博客" scheme="http://yoursite.com/categories/web%E5%89%8D%E7%AB%AF/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
+      <category term="个人博客" scheme="https://blog.govane.top/categories/web%E5%89%8D%E7%AB%AF/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
     
     
-      <category term="Hexo" scheme="http://yoursite.com/tags/Hexo/"/>
+      <category term="Hexo" scheme="https://blog.govane.top/tags/Hexo/"/>
     
-      <category term="搭建" scheme="http://yoursite.com/tags/%E6%90%AD%E5%BB%BA/"/>
+      <category term="搭建" scheme="https://blog.govane.top/tags/%E6%90%AD%E5%BB%BA/"/>
     
   </entry>
   
   <entry>
     <title>Test Title</title>
-    <link href="http://yoursite.com/2019/01/23/test-title/"/>
-    <id>http://yoursite.com/2019/01/23/test-title/</id>
+    <link href="https://blog.govane.top/2019/01/23/test-title/"/>
+    <id>https://blog.govane.top/2019/01/23/test-title/</id>
     <published>2019-01-23T07:40:51.000Z</published>
     <updated>2019-01-27T11:44:09.968Z</updated>
     
@@ -94,21 +94,21 @@
     
     </summary>
     
-      <category term="web前端" scheme="http://yoursite.com/categories/web%E5%89%8D%E7%AB%AF/"/>
+      <category term="web前端" scheme="https://blog.govane.top/categories/web%E5%89%8D%E7%AB%AF/"/>
     
-      <category term="测试" scheme="http://yoursite.com/categories/web%E5%89%8D%E7%AB%AF/%E6%B5%8B%E8%AF%95/"/>
+      <category term="测试" scheme="https://blog.govane.top/categories/web%E5%89%8D%E7%AB%AF/%E6%B5%8B%E8%AF%95/"/>
     
     
-      <category term="Hello" scheme="http://yoursite.com/tags/Hello/"/>
+      <category term="Hello" scheme="https://blog.govane.top/tags/Hello/"/>
     
-      <category term="新建" scheme="http://yoursite.com/tags/%E6%96%B0%E5%BB%BA/"/>
+      <category term="新建" scheme="https://blog.govane.top/tags/%E6%96%B0%E5%BB%BA/"/>
     
   </entry>
   
   <entry>
     <title>Hello World</title>
-    <link href="http://yoursite.com/2017/10/28/hello-world/"/>
-    <id>http://yoursite.com/2017/10/28/hello-world/</id>
+    <link href="https://blog.govane.top/2017/10/28/hello-world/"/>
+    <id>https://blog.govane.top/2017/10/28/hello-world/</id>
     <published>2017-10-28T00:39:58.000Z</published>
     <updated>2017-10-28T00:39:58.000Z</updated>
     
