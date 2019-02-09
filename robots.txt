@@ -16,3 +16,6 @@ Sitemap: http://www.blog.govane.top/sitemap.xml
 Sitemap: http://www.blog.govane.top/baidusitemap.xml
 Sitemap: http://blog.govane.top/sitemap.xml
 Sitemap: http://blog.govane.top/baidusitemap.xml
+
+Sitemap: https://blog.orghub.cn/sitemap.xml
+Sitemap: https://blog.orghub.cn/baidusitemap.xml
