@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blog.govane.top/"/>
-  <updated>2019-02-03T10:45:47.068Z</updated>
+  <updated>2019-02-09T05:40:09.698Z</updated>
   <id>https://blog.govane.top/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>更换域名方法</title>
+    <link href="https://blog.govane.top/2019/02/09/%E6%9B%B4%E6%8D%A2%E5%9F%9F%E5%90%8D%E6%96%B9%E6%B3%95/"/>
+    <id>https://blog.govane.top/2019/02/09/更换域名方法/</id>
+    <published>2019-02-09T05:18:09.000Z</published>
+    <updated>2019-02-09T05:40:09.698Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="Blog更换域名教程"><a href="#Blog更换域名教程" class="headerlink" title="Blog更换域名教程"></a>Blog更换域名教程</h2><h3 id="更换流程"><a href="#更换流程" class="headerlink" title="更换流程"></a>更换流程</h3><blockquote><p>1.更改域名解析；</p><p>2.更改站点配置文件URL；</p><p>3.改变CNAM中的域名；</p><p>4.改变robots.txt中，Sitemap字段；</p><p>5.查看Github中域名绑定是否更改；</p><p>6.对Google爬虫进行站点验证及添加；</p></blockquote><h3 id="更换域名解析"><a href="#更换域名解析" class="headerlink" title="更换域名解析"></a>更换域名解析</h3><p>在自己的域名控制台中导出自己之前绑定改过的域名，并在新的域名解析中添加。</p><h3 id="更改站点配置文件URL"><a href="#更改站点配置文件URL" class="headerlink" title="更改站点配置文件URL"></a>更改站点配置文件URL</h3><p>进入站点配置文件，更改字段：<code>url: https://xxx.com</code></p><h3 id="改变CNAM中的域名"><a href="#改变CNAM中的域名" class="headerlink" title="改变CNAM中的域名"></a>改变CNAM中的域名</h3><p>打开你的blog目录，<code>source/CNAME</code>，直接添加即可。</p><ul><li>CNAME会直接关联Github的域名绑定</li></ul><h3 id="改变robots"><a href="#改变robots" class="headerlink" title="改变robots"></a>改变robots</h3><p>打开你的blog目录，<code>source/robots.txt</code>中，改变Sitemap字段添加你的域名地址。</p><ul><li>为了给爬虫robots做引导</li></ul><h3 id="在Github中域名绑定"><a href="#在Github中域名绑定" class="headerlink" title="在Github中域名绑定"></a>在Github中域名绑定</h3><p>查看Github中域名绑定是否更改，具体位置在你的库文件下的域名绑定模块。</p><h3 id="对Google爬虫进行站点验证及添加"><a href="#对Google爬虫进行站点验证及添加" class="headerlink" title="对Google爬虫进行站点验证及添加"></a>对Google爬虫进行站点验证及添加</h3><p>点击地址自行添加：<a href="https://www.google.com/webmasters/tools/home?hl=zh-CN" target="_blank" rel="noopener">https://www.google.com/webmasters/tools/home?hl=zh-CN</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;Blog更换域名教程&quot;&gt;&lt;a href=&quot;#Blog更换域名教程&quot; class=&quot;headerlink&quot; title=&quot;Blog更换域名教程&quot;&gt;&lt;/a&gt;Blog更换域名教程&lt;/h2&gt;&lt;h3 id=&quot;更换流程&quot;&gt;&lt;a href=&quot;#更换流程&quot; class=&quot;head
+      
+    
+    </summary>
+    
+      <category term="域名" scheme="https://blog.govane.top/categories/%E5%9F%9F%E5%90%8D/"/>
+    
+      <category term="教程" scheme="https://blog.govane.top/categories/%E5%9F%9F%E5%90%8D/%E6%95%99%E7%A8%8B/"/>
+    
+    
+      <category term="域名" scheme="https://blog.govane.top/tags/%E5%9F%9F%E5%90%8D/"/>
+    
+      <category term="教程" scheme="https://blog.govane.top/tags/%E6%95%99%E7%A8%8B/"/>
+    
+  </entry>
   
   <entry>
     <title>小米Pro15.6 安装黑苹果兼MacOS Mojave安装教程</title>
@@ -39,11 +68,11 @@
       <category term="教程" scheme="https://blog.govane.top/categories/%E9%BB%91%E8%8B%B9%E6%9E%9C/%E6%95%99%E7%A8%8B/"/>
     
     
+      <category term="教程" scheme="https://blog.govane.top/tags/%E6%95%99%E7%A8%8B/"/>
+    
       <category term="黑苹果" scheme="https://blog.govane.top/tags/%E9%BB%91%E8%8B%B9%E6%9E%9C/"/>
     
       <category term="小米" scheme="https://blog.govane.top/tags/%E5%B0%8F%E7%B1%B3/"/>
-    
-      <category term="教程" scheme="https://blog.govane.top/tags/%E6%95%99%E7%A8%8B/"/>
     
   </entry>
   
