@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blog.orghub.cn/"/>
-  <updated>2019-06-07T06:57:21.331Z</updated>
+  <updated>2019-08-08T01:45:48.320Z</updated>
   <id>https://blog.orghub.cn/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>通过JSON实现本地页面传递</title>
+    <link href="https://blog.orghub.cn/2019/08/08/%E9%80%9A%E8%BF%87JSON%E5%AE%9E%E7%8E%B0%E6%9C%AC%E5%9C%B0%E9%A1%B5%E9%9D%A2%E4%BC%A0%E9%80%92/"/>
+    <id>https://blog.orghub.cn/2019/08/08/通过JSON实现本地页面传递/</id>
+    <published>2019-08-08T01:37:59.000Z</published>
+    <updated>2019-08-08T01:45:48.320Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="通过JSON实现本地页面传递"><a href="#通过JSON实现本地页面传递" class="headerlink" title="通过JSON实现本地页面传递"></a>通过JSON实现本地页面传递</h2><h3 id="流程"><a href="#流程" class="headerlink" title="流程"></a>流程</h3><blockquote><p>1.创建一个要传递的数组；</p><p>2.存数据；</p><p>3.取数据；</p><p>4.完善；</p></blockquote><h4 id="创建一个要传递的数组"><a href="#创建一个要传递的数组" class="headerlink" title="创建一个要传递的数组"></a>创建一个要传递的数组</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 创建json数组</span></span><br><span class="line"><span class="keyword">var</span> successJson = &#123;</span><br><span class="line">    <span class="comment">// 示例：clueContent: self.form.clueContent,</span></span><br><span class="line">    clueTitle: self.form.clueTitle,              <span class="comment">// 标题</span></span><br><span class="line">    occurTime: self.form.occurTime,              <span class="comment">// 响应时间</span></span><br><span class="line">    clueContent: self.form.clueContent,          <span class="comment">// 内容</span></span><br><span class="line">    informerName: self.form.informerName,        <span class="comment">// 提交人</span></span><br><span class="line">    unit: self.form.unit,                        <span class="comment">//责任单位</span></span><br><span class="line">    view: self.form.view,                        <span class="comment">//处置意见</span></span><br><span class="line">    originalUrl: self.form.originalUrl,          <span class="comment">//舆情原址</span></span><br><span class="line">    label: self.form.label.join(<span class="string">" "</span>)+<span class="string">"#"</span>,        <span class="comment">// 标签</span></span><br><span class="line">    sort: self.form.sort.join(<span class="string">" "</span>)+<span class="string">"#"</span>,          <span class="comment">//分类</span></span><br><span class="line">    severity: self.form.severity.join(<span class="string">" "</span>)+<span class="string">"#"</span>,  <span class="comment">//严重程度</span></span><br><span class="line">&#125;;</span><br><span class="line"><span class="built_in">console</span>.log(successJson);</span><br></pre></td></tr></table></figure><h4 id="存数据"><a href="#存数据" class="headerlink" title="存数据"></a>存数据</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 传递json中存数据</span></span><br><span class="line"><span class="keyword">var</span> jsonStr = <span class="built_in">JSON</span>.stringify(successJson);<span class="comment">//将JSON转为字符串</span></span><br><span class="line">localStorage.successJson = jsonStr; <span class="comment">// 将字符串存到 localStorage successJson 键下</span></span><br></pre></td></tr></table></figure><h4 id="取数据"><a href="#取数据" class="headerlink" title="取数据"></a>取数据</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 从json中取数据</span></span><br><span class="line"><span class="keyword">var</span> newUsers = <span class="built_in">JSON</span>.parse(localStorage.successJson);<span class="comment">// 转为JSON</span></span><br><span class="line"><span class="built_in">console</span>.log(newUsers); <span class="comment">// 打印出原先对象</span></span><br></pre></td></tr></table></figure><h4 id="完善"><a href="#完善" class="headerlink" title="完善"></a>完善</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 严重程度</span></span><br><span class="line">self.form.clueExt2 = newUsers.severity.split(<span class="string">"#"</span>)[<span class="number">0</span>];</span><br><span class="line"><span class="comment">// 分类</span></span><br><span class="line">self.form.clueExt1 = newUsers.sort.split(<span class="string">"#"</span>)[<span class="number">0</span>];</span><br><span class="line"><span class="comment">// 标签</span></span><br><span class="line">self.form.clueExt4 = newUsers.label.split(<span class="string">"#"</span>)[<span class="number">0</span>];</span><br><span class="line"> <span class="comment">// 责任单位</span></span><br><span class="line"> self.form.unit = newUsers.unit;</span><br><span class="line"> <span class="comment">// 处置意见</span></span><br><span class="line"> self.form.view = newUsers.view;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;通过JSON实现本地页面传递&quot;&gt;&lt;a href=&quot;#通过JSON实现本地页面传递&quot; class=&quot;headerlink&quot; title=&quot;通过JSON实现本地页面传递&quot;&gt;&lt;/a&gt;通过JSON实现本地页面传递&lt;/h2&gt;&lt;h3 id=&quot;流程&quot;&gt;&lt;a href=&quot;#流程&quot;
+      
+    
+    </summary>
+    
+      <category term="前端" scheme="https://blog.orghub.cn/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+      <category term="教程" scheme="https://blog.orghub.cn/categories/%E5%89%8D%E7%AB%AF/%E6%95%99%E7%A8%8B/"/>
+    
+    
+      <category term="前端" scheme="https://blog.orghub.cn/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+      <category term="json" scheme="https://blog.orghub.cn/tags/json/"/>
+    
+  </entry>
   
   <entry>
     <title>免费获得OneDrive 5T网盘及正版Office 365授权</title>
