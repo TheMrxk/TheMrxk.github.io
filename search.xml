@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[设定断点并监听从接口获得的结果集]]></title>
+    <url>%2F2019%2F08%2F19%2F%E8%AE%BE%E5%AE%9A%E6%96%AD%E7%82%B9%E5%B9%B6%E7%9B%91%E5%90%AC%E4%BB%8E%E6%8E%A5%E5%8F%A3%E8%8E%B7%E5%BE%97%E7%9A%84%E7%BB%93%E6%9E%9C%E9%9B%86%2F</url>
+    <content type="text"><![CDATA[通过设定断点并监听从接口获得的结果集流程 1.设定一个debugger断点； 2.返回浏览器去打开检查； 3.双击选中要监听的字段； 4.右键选择Add selected text to watches； 设定一个debugger断点12345678910showPsSeverityType()&#123; var self = this; ClueCollectionApi.getCodeMaster(&#123;codeType: "SEVERITY_TYPE"&#125;).then(function(res)&#123; self.severitys = res.data.codeMasterList; debugger; self.form.severity = self.severitys[0].code; &#125;);&#125;, 返回浏览器去打开检查 双击选中要监听的字段 右键选择Add selected text to watches]]></content>
+      <categories>
+        <category>前端</category>
+        <category>教程</category>
+      </categories>
+      <tags>
+        <tag>前端</tag>
+        <tag>断点</tag>
+        <tag>监听</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[通过JSON实现本地页面传递]]></title>
     <url>%2F2019%2F08%2F08%2F%E9%80%9A%E8%BF%87JSON%E5%AE%9E%E7%8E%B0%E6%9C%AC%E5%9C%B0%E9%A1%B5%E9%9D%A2%E4%BC%A0%E9%80%92%2F</url>
     <content type="text"><![CDATA[通过JSON实现本地页面传递流程 1.创建一个要传递的数组； 2.存数据； 3.取数据； 4.完善； 创建一个要传递的数组123456789101112131415// 创建json数组var successJson = &#123; // 示例：clueContent: self.form.clueContent, clueTitle: self.form.clueTitle, // 标题 occurTime: self.form.occurTime, // 响应时间 clueContent: self.form.clueContent, // 内容 informerName: self.form.informerName, // 提交人 unit: self.form.unit, //责任单位 view: self.form.view, //处置意见 originalUrl: self.form.originalUrl, //舆情原址 label: self.form.label.join(" ")+"#", // 标签 sort: self.form.sort.join(" ")+"#", //分类 severity: self.form.severity.join(" ")+"#", //严重程度&#125;;console.log(successJson); 存数据123// 传递json中存数据var jsonStr = JSON.stringify(successJson);//将JSON转为字符串localStorage.successJson = jsonStr; // 将字符串存到 localStorage successJson 键下 取数据123// 从json中取数据var newUsers = JSON.parse(localStorage.successJson);// 转为JSONconsole.log(newUsers); // 打印出原先对象 完善12345678910// 严重程度self.form.clueExt2 = newUsers.severity.split("#")[0];// 分类self.form.clueExt1 = newUsers.sort.split("#")[0];// 标签self.form.clueExt4 = newUsers.label.split("#")[0]; // 责任单位 self.form.unit = newUsers.unit; // 处置意见 self.form.view = newUsers.view;]]></content>

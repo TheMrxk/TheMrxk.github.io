@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blog.orghub.cn/"/>
-  <updated>2019-08-08T01:45:48.320Z</updated>
+  <updated>2019-08-19T00:54:53.773Z</updated>
   <id>https://blog.orghub.cn/</id>
   
   <author>
@@ -15,6 +15,37 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>设定断点并监听从接口获得的结果集</title>
+    <link href="https://blog.orghub.cn/2019/08/19/%E8%AE%BE%E5%AE%9A%E6%96%AD%E7%82%B9%E5%B9%B6%E7%9B%91%E5%90%AC%E4%BB%8E%E6%8E%A5%E5%8F%A3%E8%8E%B7%E5%BE%97%E7%9A%84%E7%BB%93%E6%9E%9C%E9%9B%86/"/>
+    <id>https://blog.orghub.cn/2019/08/19/设定断点并监听从接口获得的结果集/</id>
+    <published>2019-08-19T00:30:55.000Z</published>
+    <updated>2019-08-19T00:54:53.773Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="通过设定断点并监听从接口获得的结果集"><a href="#通过设定断点并监听从接口获得的结果集" class="headerlink" title="通过设定断点并监听从接口获得的结果集"></a>通过设定断点并监听从接口获得的结果集</h2><h3 id="流程"><a href="#流程" class="headerlink" title="流程"></a>流程</h3><blockquote><p>1.设定一个debugger断点；</p><p>2.返回浏览器去打开检查；</p><p>3.双击选中要监听的字段；</p><p>4.右键选择Add selected text to watches；</p></blockquote><h4 id="设定一个debugger断点"><a href="#设定一个debugger断点" class="headerlink" title="设定一个debugger断点"></a>设定一个<code>debugger</code>断点</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">showPsSeverityType()&#123;</span><br><span class="line">    <span class="keyword">var</span> self = <span class="keyword">this</span>;</span><br><span class="line"></span><br><span class="line">    ClueCollectionApi.getCodeMaster(&#123;<span class="attr">codeType</span>: <span class="string">"SEVERITY_TYPE"</span>&#125;).then(<span class="function"><span class="keyword">function</span>(<span class="params">res</span>)</span>&#123;</span><br><span class="line"></span><br><span class="line">        self.severitys = res.data.codeMasterList;</span><br><span class="line">        <span class="keyword">debugger</span>;</span><br><span class="line">        self.form.severity = self.severitys[<span class="number">0</span>].code;</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure><h4 id="返回浏览器去打开检查"><a href="#返回浏览器去打开检查" class="headerlink" title="返回浏览器去打开检查"></a>返回浏览器去打开检查</h4><p><img src="/2019/08/19/设定断点并监听从接口获得的结果集/1.png" alt="1"></p><h4 id="双击选中要监听的字段"><a href="#双击选中要监听的字段" class="headerlink" title="双击选中要监听的字段"></a>双击选中要监听的字段</h4><p><img src="/2019/08/19/设定断点并监听从接口获得的结果集/2.png" alt="2"></p><h4 id="右键选择Add-selected-text-to-watches"><a href="#右键选择Add-selected-text-to-watches" class="headerlink" title="右键选择Add selected text to watches"></a>右键选择<code>Add selected text to watches</code></h4><p><img src="/2019/08/19/设定断点并监听从接口获得的结果集/3.png" alt="3"></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;通过设定断点并监听从接口获得的结果集&quot;&gt;&lt;a href=&quot;#通过设定断点并监听从接口获得的结果集&quot; class=&quot;headerlink&quot; title=&quot;通过设定断点并监听从接口获得的结果集&quot;&gt;&lt;/a&gt;通过设定断点并监听从接口获得的结果集&lt;/h2&gt;&lt;h3 id=&quot;流
+      
+    
+    </summary>
+    
+      <category term="前端" scheme="https://blog.orghub.cn/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+      <category term="教程" scheme="https://blog.orghub.cn/categories/%E5%89%8D%E7%AB%AF/%E6%95%99%E7%A8%8B/"/>
+    
+    
+      <category term="前端" scheme="https://blog.orghub.cn/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+      <category term="断点" scheme="https://blog.orghub.cn/tags/%E6%96%AD%E7%82%B9/"/>
+    
+      <category term="监听" scheme="https://blog.orghub.cn/tags/%E7%9B%91%E5%90%AC/"/>
+    
+  </entry>
   
   <entry>
     <title>通过JSON实现本地页面传递</title>
