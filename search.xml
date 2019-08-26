@@ -1,6 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Mac使用Myeclipse搭建SSH2框架]]></title>
+    <url>%2F2019%2F08%2F26%2FMac%E4%BD%BF%E7%94%A8Myeclipse%E6%90%AD%E5%BB%BASSH2%E6%A1%86%E6%9E%B6%2F</url>
+    <content type="text"><![CDATA[Mac使用Myeclipse搭建SSH2框架流程 1.创建一个Web Project项目； 2.添加Struts； 3.添加Spring； 4.添加一个数据库； 5.添加Hibernate链接； 创建一个Web Project项目 这里请根据自己需求来写，若改变其中内容，后续选项可能会稍有不同 添加架构如图所示，顺序123 添加Struts 安装的架包视情况而定 添加Spring 这里想文件位置改变为如图所示位置 添加一个数据库 在数据库软件中添加一个数据库，软件不限，不会请自行百度 切换到数据库视图，我们要将myeclipse链接到这个数据库 新建一个连接 1.使用的数据库语言 2.你要创建的链接名称 3.你的本地数据库地址 4.你的数据库用户名 5.你的数据库密码 6.添加驱动包 7.驱动bin包 8.设置驱动 9.保存密码 在第7步骤中需要下载数据库驱动jar包mysql-connector-java-5.1.47-bin.jar，具体百度获取。 注意是压缩包中 -bin 文件 测试是否连通，若出现错误，请检查上图中是否设置出错。如url，用户名，密码等。 添加Hibernate链接 Web测试]]></content>
+      <categories>
+        <category>框架</category>
+        <category>教程</category>
+      </categories>
+      <tags>
+        <tag>框架</tag>
+        <tag>SSH-2</tag>
+        <tag>Java-EE</tag>
+        <tag>Struts</tag>
+        <tag>Spring</tag>
+        <tag>Hibernate</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[设定断点并监听从接口获得的结果集]]></title>
     <url>%2F2019%2F08%2F19%2F%E8%AE%BE%E5%AE%9A%E6%96%AD%E7%82%B9%E5%B9%B6%E7%9B%91%E5%90%AC%E4%BB%8E%E6%8E%A5%E5%8F%A3%E8%8E%B7%E5%BE%97%E7%9A%84%E7%BB%93%E6%9E%9C%E9%9B%86%2F</url>
     <content type="text"><![CDATA[通过设定断点并监听从接口获得的结果集流程 1.设定一个debugger断点； 2.返回浏览器去打开检查； 3.双击选中要监听的字段； 4.右键选择Add selected text to watches； 设定一个debugger断点12345678910showPsSeverityType()&#123; var self = this; ClueCollectionApi.getCodeMaster(&#123;codeType: "SEVERITY_TYPE"&#125;).then(function(res)&#123; self.severitys = res.data.codeMasterList; debugger; self.form.severity = self.severitys[0].code; &#125;);&#125;, 返回浏览器去打开检查 双击选中要监听的字段 右键选择Add selected text to watches]]></content>
