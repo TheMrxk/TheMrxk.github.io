@@ -470,7 +470,7 @@
 <p>如果较低版本会自动生成一个密码，这个密码需要记住，并且在连接是会发生以下问题，并附上解决办法</p>
 </blockquote>
 <p>登陆成功，但是运行命令的时候会报错，提示我们需要重设密码。</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">mysql&gt;</span> show databases;ERROR 1820 (HY000): You must reset your password using ALTER USER statement before executing this statement.mysql&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">mysql&gt;</span><span class="bash"> show databases;ERROR 1820 (HY000): You must reset your password using ALTER USER statement before executing this statement.mysql&gt;</span></span><br></pre></td></tr></table></figure>
 <p> 修改密码，新密码为123456</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">set PASSWORD =PASSWORD('123456');</span><br></pre></td></tr></table></figure>
 <p>再次执行show databases;就正常了。</p>
@@ -877,7 +877,7 @@
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共14.8k字</span>
+  <span class="post-count">博客全站共15.3k字</span>
 </div>
         
 
