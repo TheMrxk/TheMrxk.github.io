@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[错误:ids for this class must be manually assigned beforeQuery calling save(): com.hp.bean.UserBean详解]]></title>
+    <url>%2F2019%2F09%2F01%2F%E9%94%99%E8%AF%AF-ids-for-this-class-must-be-manually-assigned-beforeQuery-calling-save-com-hp-bean-UserBean%E8%AF%A6%E8%A7%A3%2F</url>
+    <content type="text"><![CDATA[错误:ids for this class must be manually assigned beforeQuery calling save():com.hp.bean.UserBean详解这个错误主要是 此类的id值为空（没有set该值 或 手工生成的值为null）spring映射文件没有设置为自动增长]]></content>
+      <categories>
+        <category>错误详解</category>
+      </categories>
+      <tags>
+        <tag>BUG</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[【TheMrxk】Win10_PRO专业版_x64_适度精简家用工作版v2.0]]></title>
     <url>%2F2019%2F09%2F01%2FWin10PRO%E4%B8%93%E4%B8%9A%E7%89%88v2-0%2F</url>
     <content type="text"><![CDATA[【TheMrxk】Win10_PRO专业版x64适度精简家用工作版v2.0【系统简介】 没有什么需要介绍的，牛逼，很强，用就完了，小T出品必是精品！ 【系统说明】 【v2.0系统说明】2019年8月24日更新：修复部分错误导致桌面重复图标 【v1.0系统说明】2019年8月21日更新：基于Windows 10 OS 17763.652 -1809制作优化，精简大量微软自带软件，还原一个纯净的系统，打入补丁和.Net3.5组件，集成个人优化方案。体积缩小80%释放后为9G左右。 【系统特点】 综合了一下朋友们的意见，在几个地方做了一些改动。1.开始菜单样式仿win7,（可更改回原来的样子）。2.取消精简版搜狗输入法（可在群内下载）。3.更新Microsoft Visual C++ 2015-2019 (14.22.27807)4.更新Adobe Flash Player AX/NP/PP 32.0.0.2235.补丁更新至7月最新 【如何安装】 本版本为无人值守版本 ，在PE环境下使用Dism++释放自己需要的版本，系统没有篡改锁定主页和添加垃圾软件的行为，请不要使用大X菜，老X桃，深度PE等含有广告性质的PE安装本系统！系统安装后，请勿使用腾讯管家 360，等软件优化系统，出现问题与本人无关！ 【免责声明】 本系统及软件来源于互联网，版权属各自产权人所有，仅用于临时测试PC硬件之用，不得用于商业用途，我不承担任何技术及版权问题，且不对任何资源负法律责任。所有资源请在下载后72小时内删除。制作安装镜像 【系统截图】 【系统下载】 【TheMrxk】Win10_PRO专业版x64适度精简家用工作版v2.0.esd百度网盘：链接：https://pan.baidu.com/s/1c38Wv9ssXLXJAymsUGYgAg提取码:请扫面屏幕下方二维码公告中获取（制作不易请谅解~） 【交流反馈】 个人博客：blog.orghub.cnQQ交流群：①群 ：70230004（小号误加,秒退误加）QQ：952339610]]></content>
