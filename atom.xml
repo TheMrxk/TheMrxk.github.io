@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blog.orghub.cn/"/>
-  <updated>2019-09-23T08:45:21.350Z</updated>
+  <updated>2019-10-08T01:37:14.503Z</updated>
   <id>https://blog.orghub.cn/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>错误:could not resolve property: UserName of:的解决办法</title>
+    <link href="https://blog.orghub.cn/2019/10/08/%E9%94%99%E8%AF%AF-could-not-resolve-property-UserName-of-%E7%9A%84%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/"/>
+    <id>https://blog.orghub.cn/2019/10/08/错误-could-not-resolve-property-UserName-of-的解决办法/</id>
+    <published>2019-10-08T01:33:51.000Z</published>
+    <updated>2019-10-08T01:37:14.503Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="错误-could-not-resolve-property-UserName-of-的解决办法"><a href="#错误-could-not-resolve-property-UserName-of-的解决办法" class="headerlink" title="错误:could not resolve property: UserName of:的解决办法"></a>错误:could not resolve property: UserName of:的解决办法</h2><p><img src="/2019/10/08/错误-could-not-resolve-property-UserName-of-的解决办法/1.png" alt="1"></p><p><img src="/2019/10/08/错误-could-not-resolve-property-UserName-of-的解决办法/2.png" alt="2"></p><p>检查Hibernate的映射文件字段是否匹配，在自动生成映射文件的时候，大写开头的字段会自动变成小写。导致查询的字段无效。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;错误-could-not-resolve-property-UserName-of-的解决办法&quot;&gt;&lt;a href=&quot;#错误-could-not-resolve-property-UserName-of-的解决办法&quot; class=&quot;headerlink&quot; title
+      
+    
+    </summary>
+    
+      <category term="错误详解" scheme="https://blog.orghub.cn/categories/%E9%94%99%E8%AF%AF%E8%AF%A6%E8%A7%A3/"/>
+    
+    
+      <category term="BUG" scheme="https://blog.orghub.cn/tags/BUG/"/>
+    
+  </entry>
   
   <entry>
     <title>错误:Could not retrieve transation read only status server详解</title>

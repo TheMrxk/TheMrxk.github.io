@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[错误:could not resolve property: UserName of:的解决办法]]></title>
+    <url>%2F2019%2F10%2F08%2F%E9%94%99%E8%AF%AF-could-not-resolve-property-UserName-of-%E7%9A%84%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95%2F</url>
+    <content type="text"><![CDATA[错误:could not resolve property: UserName of:的解决办法 检查Hibernate的映射文件字段是否匹配，在自动生成映射文件的时候，大写开头的字段会自动变成小写。导致查询的字段无效。]]></content>
+      <categories>
+        <category>错误详解</category>
+      </categories>
+      <tags>
+        <tag>BUG</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[错误:Could not retrieve transation read only status server详解]]></title>
     <url>%2F2019%2F09%2F23%2F%E9%94%99%E8%AF%AF-Could-not-retrieve-transation-read-only-status-server%E8%AF%A6%E8%A7%A3%2F</url>
     <content type="text"><![CDATA[错误:Could not retrieve transation read-only status server详解错误分析： 检查数据库的驱动文件是否匹配 检查lib包文件中是否有当前数据库中的驱动jar包]]></content>
